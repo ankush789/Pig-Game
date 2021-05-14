@@ -14,11 +14,12 @@ h2 {
   font-weight: 100;
 }
 .main {
-  width: 55%;
+  width: 70%;
+  height: 75vh;
   display: flex;
+  position: relative;
   justify-content: space-around;
   background-color: #ba7896;
-  padding: 2rem 0rem;
   border-radius: 2rem;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
 }
@@ -27,10 +28,12 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 2rem 2rem 2rem;
 }
 .totalScore {
   color: #bf2e34;
   font-size: 4rem;
+  margin-top: 0;
 }
 .score {
   display: flex;
@@ -47,36 +50,48 @@ h2 {
   margin: 0.6rem;
 }
 .left {
-  /* margin-right: 10rem; */
+  width: 50%;
+  border-radius: 2rem 0 0 2rem;
+  background-color: teal;
+}
+.right {
+  width: 50%;
+  border-radius: 0 2rem 2rem 0;
 }
 
 .buttons {
   position: absolute;
+  top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.buttons img {
+  width: 30%;
+  margin-top: 3rem;
+}
 .btn {
   font-size: 1.2rem;
-  background-color: #c4abab;
-  padding: 0.2rem 0.7rem;
+  background-color: white;
+  padding: 0.7rem 2.5rem;
   backdrop-filter: blur(4px);
   outline: none;
   border: none;
   cursor: pointer;
-  border-radius: 0.5rem;
+  border-radius: 1.2rem;
 }
 .activePlayer {
+  background-color: rgba(255, 255, 255, 0.4);
 }
-.playButtons {
-  margin-top: 18rem;
+.rollDice {
+  margin-top: 7rem;
 }
-.newGame {
-  margin-top: 1.5rem;
-}
-.holdUp {
+/* .newGame {
+  margin-top: 3.2rem;
+} */
+/* .holdUp {
   margin-top: 1rem;
-}
+} */
 @media screen and (max-width: 1240px) {
   .main {
     width: 70%;
@@ -86,19 +101,10 @@ h2 {
   .main {
     width: 80%;
   }
-
-.newGame {
-  margin-top: 8.7rem;
-}
-.playButtons {
-  margin-top: 1rem;
 }
 @media screen and (max-width: 768px) {
   .main {
     width: 90%;
-  }
-  .newGame {
-    margin-top: 8.7rem;
   }
 }
 @media screen and (max-width: 680px) {
@@ -108,12 +114,6 @@ h2 {
   body {
     font-size: 12px;
   }
-  /* .newGame {
-    margin-top: 0.7rem;
-  }
-  .playButtons {
-    margin-top: 16rem;
-  } */
 }
 @media screen and (max-width: 576px) {
   .main {
@@ -121,12 +121,6 @@ h2 {
   }
   body {
     font-size: 10px;
-  }
-  .newGame {
-    margin-top: 4.7rem;
-  }
-  .playButtons {
-    margin-top: 1rem;
   }
   .score {
     padding: 0 2rem;
@@ -140,10 +134,10 @@ h2 {
   .btn {
     font-size: 0.8rem;
   }
-  .left {
-    /* margin-right: 5rem; */
-  }
   .score {
     font-size: 0.7rem;
+  }
+  .rollDice {
+    margin-top: 9rem;
   }
 }

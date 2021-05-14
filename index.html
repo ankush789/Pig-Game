@@ -8,14 +8,9 @@
     <title>Pig Game</title>
   </head>
   <body>
+   
     <div class="main">
-      <div class="buttons">
-        <button class="btn newGame">🔄 New game</button>
-        <div class="playButtons"></div>
-        <button class="btn rollDice">🎲 Roll Dice</button>
-        <button class="btn holdUp">📥 Hold</button>
-      </div>
-      <div class="left flex">
+      <div class="left flex activePlayer">
         <h1 class="name">PLAYER 1</h1>
         <h1 class="totalScore">0</h1>
         <div class="score">
@@ -31,6 +26,12 @@
           <h2>0</h2>
       </div>
     </div>
+     <div class="buttons">
+          <button class="btn newGame">🔄 New game</button><br>
+          <img src="./images/dice-6.png" alt="dice-6" />
+          <button class="btn rollDice">🎲 Roll Dice</button><br>
+          <button class="btn holdUp">📥 Hold</button>
+      </div>
     <script src="script.js"></script>
   </body>
 </html>

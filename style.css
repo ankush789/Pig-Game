@@ -47,10 +47,9 @@ h2 {
   margin: 0.6rem;
 }
 .left {
-  margin-right: 10rem;
+  /* margin-right: 10rem; */
 }
-.right {
-}
+
 .buttons {
   position: absolute;
   display: flex;
@@ -61,12 +60,14 @@ h2 {
   font-size: 1.2rem;
   background-color: #c4abab;
   padding: 0.2rem 0.7rem;
-  border: none;
   backdrop-filter: blur(4px);
   outline: none;
+  border: none;
+  cursor: pointer;
   border-radius: 0.5rem;
 }
-
+.activePlayer {
+}
 .playButtons {
   margin-top: 18rem;
 }
@@ -76,19 +77,28 @@ h2 {
 .holdUp {
   margin-top: 1rem;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1240px) {
   .main {
     width: 70%;
   }
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 990px) {
   .main {
     width: 80%;
   }
+
+.newGame {
+  margin-top: 8.7rem;
+}
+.playButtons {
+  margin-top: 1rem;
 }
 @media screen and (max-width: 768px) {
   .main {
     width: 90%;
+  }
+  .newGame {
+    margin-top: 8.7rem;
   }
 }
 @media screen and (max-width: 680px) {
@@ -98,12 +108,12 @@ h2 {
   body {
     font-size: 12px;
   }
-  .newGame {
+  /* .newGame {
     margin-top: 0.7rem;
   }
   .playButtons {
     margin-top: 16rem;
-  }
+  } */
 }
 @media screen and (max-width: 576px) {
   .main {
@@ -113,10 +123,10 @@ h2 {
     font-size: 10px;
   }
   .newGame {
-    margin-top: 0.7rem;
+    margin-top: 4.7rem;
   }
   .playButtons {
-    margin-top: 10.5rem;
+    margin-top: 1rem;
   }
   .score {
     padding: 0 2rem;
@@ -131,9 +141,9 @@ h2 {
     font-size: 0.8rem;
   }
   .left {
-    margin-right: 5rem;
+    /* margin-right: 5rem; */
   }
   .score {
-    padding: 0 1.5rem;
+    font-size: 0.7rem;
   }
 }

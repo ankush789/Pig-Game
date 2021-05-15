@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
 html {
   box-sizing: border-box;
 }
@@ -28,7 +29,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem 2rem 2rem;
 }
 .totalScore {
   color: #bf2e34;
@@ -52,11 +52,12 @@ h2 {
 .left {
   width: 50%;
   border-radius: 2rem 0 0 2rem;
-  background-color: teal;
+  padding-right: 1rem;
 }
 .right {
   width: 50%;
   border-radius: 0 2rem 2rem 0;
+  padding-left: 1rem;
 }
 
 .buttons {
@@ -86,45 +87,128 @@ h2 {
 .rollDice {
   margin-top: 7rem;
 }
-/* .newGame {
-  margin-top: 3.2rem;
-} */
-/* .holdUp {
-  margin-top: 1rem;
-} */
-@media screen and (max-width: 1240px) {
-  .main {
-    width: 70%;
-  }
+.winner {
+  position: absolute;
+  font-size: 1.1rem;
+  color: #b60808;
+  word-spacing: 3px;
 }
-@media screen and (max-width: 990px) {
+.winnerBag {
+  background-color: grey;
+}
+.info {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+.modal-window {
+  position: absolute;
+  top: 5rem;
+  word-spacing: 1px;
+  line-height: 27px;
+  color: white;
+  border-radius: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #6d1740;
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.modal-window button {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.modal-window h1 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.modal-window ul {
+  font-size: 1.2rem;
+}
+.showModal {
+  font-size: 2rem;
+  border-radius: 1.5rem;
+  outline: none;
+  padding: 1rem;
+  margin: 1rem;
+}
+.closeModal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 5;
+}
+@media screen and (max-width: 1240px) {
   .main {
     width: 80%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .main {
     width: 90%;
   }
 }
-@media screen and (max-width: 680px) {
-  .main {
-    width: 95%;
-  }
-  body {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .main {
     width: 100%;
   }
+}
+@media screen and (max-width: 680px) {
+  body {
+    font-size: 12px;
+  }
+  .leftScore {
+    margin-right: 4rem;
+  }
+  .rightScore {
+    margin-left: 4rem;
+  }
+}
+@media screen and (max-width: 576px) {
   body {
     font-size: 10px;
   }
   .score {
     padding: 0 2rem;
     margin-top: 0;
+  }
+  .rollDice {
+    margin-top: 8rem;
+  }
+  .leftScore {
+    margin-right: 0;
+  }
+  .rightScore {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 450px) {

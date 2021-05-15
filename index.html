@@ -8,30 +8,40 @@
     <title>Pig Game</title>
   </head>
   <body>
-   
     <div class="main">
+      <img
+        src="./images/info.png"
+        onclick="displayInstructions()"
+        class="info"
+        alt="info"
+      />
       <div class="left flex activePlayer">
         <h1 class="name">PLAYER 1</h1>
         <h1 class="totalScore">0</h1>
-        <div class="score">
+        <span class="winner"></span>
+        <div class="score leftScore">
           <h2>Current</h2>
-          <h2>0</h2>
+          <h2 class="currScore">0</h2>
         </div>
       </div>
       <div class="right flex">
         <h1 class="name">PLAYER 2</h1>
         <h1 class="totalScore">0</h1>
-        <div class="score">
+        <span class="winner"></span>
+        <div class="score rightScore">
           <h2>Current</h2>
-          <h2>0</h2>
+          <h2 class="currScore">0</h2>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn newGame">🔄 New game</button><br />
+        <img src="./images/dice-6.png" class="diceImg" alt="dice-6" />
+        <button class="btn rollDice">🎲 Roll Dice</button><br />
+        <button class="btn holdUp">📥 Hold</button>
       </div>
     </div>
-     <div class="buttons">
-          <button class="btn newGame">🔄 New game</button><br>
-          <img src="./images/dice-6.png" alt="dice-6" />
-          <button class="btn rollDice">🎲 Roll Dice</button><br>
-          <button class="btn holdUp">📥 Hold</button>
-      </div>
+    <div class="overlay hidden"></div>
+
     <script src="script.js"></script>
   </body>
 </html>

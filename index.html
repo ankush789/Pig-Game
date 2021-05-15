@@ -15,6 +15,40 @@
         class="info"
         alt="info"
       />
+
+      <!-------------------- Modal-Window for showing game instructions---------------------->
+      <div class="modal-window hidden">
+        <button class="close-modal" onclick="closeModal()">&times;</button>
+        <h1>Instructions for the game</h1>
+        <ul>
+          <li>There are two players playing the game at a time.</li>
+          <li>
+            In every chance, a player can roll a dice until 1 appears on it or
+            player voluntarily presses
+            <span style="font-style: italic">Hold Button</span> Every time dice
+            is rolled, the score on the dice gets added to the current score of
+            that player (except 1).
+          </li>
+          <li>
+            There are two ways of getting a chance or player gets switched when
+            :
+            <ul>
+              <li>1 appears on the dice.</li>
+              <li>
+                Player voluntarily press
+                <span style="font-style: italic">Hold Button</span>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            On pressing <span style="font-style: italic">Hold Button</span>,
+            current score of the player gets added to the total score.
+          </li>
+          <li>
+            Player who got 100 points first will be the 🏆 winner of the game.
+          </li>
+        </ul>
+      </div>
       <div class="left flex activePlayer">
         <h1 class="name">PLAYER 1</h1>
         <h1 class="totalScore">0</h1>

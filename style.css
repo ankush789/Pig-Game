@@ -167,6 +167,7 @@ h2 {
   backdrop-filter: blur(4px);
   z-index: 5;
 }
+
 @media screen and (max-width: 1240px) {
   .main {
     width: 80%;
